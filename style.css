@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+     
+    --location-text:  hsl(75, 94%, 57%);
+    --active: hsl(75, 94%, 57%);
+    --description: hsl(0, 0%, 20%);
+    --background: hsl(0, 0%, 8%);
+    --card-background: hsl(0, 0%, 12%);
+    --text: hsl(0, 0%, 100%);
+
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.card{
+    height: max-content;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    background-color: var(--card-background);
+    border-radius: 8px;
+}
+
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 8px;
+}
+.user-name{
+    color: var(--text);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.user-address{
+    color: var(--active);
+    font-size: 11px;
+    font-weight: 600;
+}
+.user-skills{
+    font-size: 11px;
+    color: var(--text);
+    line-height: 20px;
+    font-weight: 400;
+
+}
+.user-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.user-social-link ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+.user-social-link a{
+    display: block;
+    text-decoration: none;
+    background-color: var(--description);
+    color: var(--text);
+    text-align: center;
+    padding: 9px;
+    margin: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+ 
+    
+    
+}
+
+.user-social-link a:active{
+    background-color: var(--active);
+}
+
+
+.outro{
+    position: absolute;
+    bottom: 30px;
+    color: var(--text);
+    font-size: 10px;
+}
+
+.outro >*{
+    text-decoration: none;
+    color: var(--active);
+}
